@@ -1,11 +1,13 @@
-# Recipe Simplifier
+# Recipe Cleaner
 
 ## Purpose
 Recipe sites such as allrecipes.com has too many ads and unnecessary content aside from the actual recipe. 
 
 Therefore, this website allows the user to input a URL and retrieve just the most important parts.
 
-![Alt Text](C:\Github\Projects\Recipe-Cleaner-app\images\Screenshot 2026-01-18 183313.png)
+Below is a screenshot of how the website looks like.
+
+![Alt Text](./images/demo.png)
 
 ## Tech Stack
 React, Tailwind CSS, JavaScript (ES6+), Express, Playwright
