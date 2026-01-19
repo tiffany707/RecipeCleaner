@@ -3,6 +3,7 @@ import { chromium } from "playwright";
 
 const router = express.Router();
 
+//retrieves information from allrecipes.com
 const runScraper = async (url) => {
     try{
         const browser = await chromium.launch();
@@ -13,7 +14,6 @@ const runScraper = async (url) => {
         const details = await page.locator(".mm-recipes-details__content div").allInnerTexts();
         let ingredients = await page.locator('.comp.mm-recipes-lrs-ingredients.mntl-block li').allInnerTexts();
         const directions = await page.locator(".comp.mntl-sc-block.mntl-sc-block-startgroup.mntl-sc-block-group--OL p").allInnerTexts();
-        console.log("hi im scraper")
         
         await browser.close();
         return [title, details, ingredients, directions];
