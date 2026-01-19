@@ -9,6 +9,15 @@ Below is a screenshot of how the website looks like.
 
 ![Alt Text](./images/demo.png)
 
+## How to Run this project
+   1. Clone this Rep
+   2. Open your terminal and run:
+      ```bash
+         cd RecipeCleaner
+         npm run install-all
+         npm run dev
+   3. Go to http://localhost:5173/
+
 ## Tech Stack
 React, Tailwind CSS, JavaScript (ES6+), Express, Playwright
 
